@@ -31,9 +31,6 @@ const Footer = () => {
                 <li className="hover:ml-[5px] duration-500 my-[7px]">
                   <Link to="/projects">PROJECTS</Link>
                 </li>
-                <li className="hover:ml-[5px] duration-500 my-[7px]">
-                  <Link to="/cv">CV</Link>
-                </li>
               </ul>
             </div>
           </div>

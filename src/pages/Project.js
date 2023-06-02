@@ -4,9 +4,9 @@ import { BsYoutube, BsGithub } from "react-icons/bs";
 
 const Project = ({ project }) => {
   return (
-    <div className="max-w-[1380px] mx-auto pt-[10px] bg-white">
+    <div className="w-full mx-auto pt-[10px] bg-blue-600">
       {/* project title */}
-      <h1 className="text-center text-[40px] font-bold text-blue-900 ">
+      <h1 className="text-center text-[40px] font-bold text-white ">
         {`${project.title} `}
         <a href="#demo" className="relative left-[50px]">
           <MdOutlineKeyboardDoubleArrowDown className="arrow text-[60px]" />
@@ -53,7 +53,7 @@ const Project = ({ project }) => {
         <div className="flex gap-[10px] justify-center items-start">
           {/* front-end */}
           <ul className="w-[22%] p-[20px] text-center">
-            <li className="text-[30px] text-blue-600 font-bold">Front End</li>
+            <li className="text-[30px] text-white font-bold">Front End</li>
             {project?.frontEnd?.map((item, index) => (
               <li className=" text-black font-bold text-[25px]" key={index}>
                 {index + 1}-{item}
@@ -63,7 +63,7 @@ const Project = ({ project }) => {
           {/* back-end */}
           {project?.backEnd ? (
             <ul className="w-[22%] p-[20px] text-center">
-              <li className="text-[30px] text-blue-600 font-bold">Back End</li>
+              <li className="text-[30px] text-white  font-bold">Back End</li>
               {project?.backEnd?.map((item, index) => (
                 <li className=" text-black font-bold text-[25px]" key={index}>
                   {index + 1}-{item}
@@ -75,7 +75,7 @@ const Project = ({ project }) => {
           )}
           {/* Site Capabilities */}
           <ul className="w-[50%] p-[20px] ">
-            <li className="text-[30px] font-bold text-blue-600 ">
+            <li className="text-[30px] font-bold text-white  ">
               Site Capabilities
             </li>
             {project?.description?.map((item, index) => (

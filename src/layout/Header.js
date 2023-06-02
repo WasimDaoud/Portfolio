@@ -16,12 +16,7 @@ const Header = () => {
       id: 6,
       title: "PROJECTS",
       path: "/projects",
-    },
-    {
-      id: 2,
-      title: "CV",
-      path: "cv",
-    },
+    }
   ];
 
   return (
@@ -72,9 +67,6 @@ const Header = () => {
             <li className="hover:scale-[1.5] duration-500">
               <Link to="/projects">PROJECTS</Link>
             </li>
-            <li className="hover:scale-[1.5] duration-500">
-              <Link to="/cv">CV</Link>
-            </li>
           </ul>
         </div>
       ) : (
@@ -85,9 +77,6 @@ const Header = () => {
             </li>
             <li className="hover:scale-[1.5] duration-500">
               <Link to="/project">PROJECTS</Link>
-            </li>
-            <li className="hover:scale-[1.5] duration-500">
-              <Link to="/cv">CV</Link>
             </li>
           </ul>
         </div>
