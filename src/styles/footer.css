@@ -1,0 +1,8 @@
+.footer{
+    background-color: var(--secondary-color);
+}
+
+.footer .tasty{
+    color: var(--main-color);
+}
+

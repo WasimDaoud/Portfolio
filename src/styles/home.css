@@ -1,0 +1,48 @@
+.home {
+  height: calc(100vh - 70px);
+  background-color: var(--secondary-color);
+}
+.welcome h1 span {
+  color: var(--main-color);
+}
+
+/**************** arrow and its animation ****************/
+.arrow {
+  color: var(--main-color);
+  position: absolute;
+  right: 0px;
+  animation: arrow 2s linear infinite;
+}
+
+/*home arrow animation*/
+@keyframes arrow {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -15px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+/***********************************************************/
+/* .main-section-2 {
+  height: calc(100vh);
+} */
+
+/***********************************************************/
+
+.home-image {
+  bottom: 0px;
+  animation: move-home-image 2s linear 1;
+}
+
+@keyframes move-home-image {
+  0% {
+    bottom: -400px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
